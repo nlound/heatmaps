@@ -1,7 +1,5 @@
 var map, pointarray, heatmap, kmzLayer, markerCluster;
 var puntosHeat = [];
-var spritePath = "img/pictosmaps.png";
-var tam = new google.maps.Size(40, 40);
 
 // cargo el csv con los puntos en un array
 $.ajax({
