@@ -1,0 +1,19 @@
+{
+  "name": "Heatmap",
+  "version": "0.0.1",
+  "repository":"https://github.com/nlound/heatmaps.git",
+  "description": "Heatmap con Google Maps",
+  "author": {
+    "name": "Nicolás Lound",
+    "email": "nicolas.lound@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-beep": "^0.3.1",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

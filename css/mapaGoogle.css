@@ -1,0 +1,28 @@
+html, body, #mapaGoogle {
+  height: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+#panel {
+  background-color: #fff;
+  border: 0 none;
+  border-radius: 2px;
+  bottom: 30px;
+  height: 45px;
+  padding: 5px;
+  position: absolute;
+  right: 54px;
+  width: 45px;
+  z-index: 5;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3); }
+  #panel button {
+    background: url("img/opacity.svg") no-repeat scroll 0 0 #ffffff;
+    border: 0 none;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8; }
+  #panel button:hover {
+    cursor: pointer;
+    opacity: 1; }
+
+/*# sourceMappingURL=mapaGoogle.css.map */
