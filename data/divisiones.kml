@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
 <Document id="root_doc">
-	<name>zonas-2.kml</name>
+	<name>zonas.kml</name>
+	<open>1</open>
 	<Schema name="zonas" id="zonas">
 		<SimpleField type="int" name="OBJECTID"></SimpleField>
 		<SimpleField type="float" name="ID"></SimpleField>
@@ -12,9 +13,15 @@
 		<SimpleField type="float" name="AREA"></SimpleField>
 	</Schema>
 	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
 		<LineStyle>
 			<color>33000000</color>
-			<width>3.6</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>00ffffff</color>
@@ -31,9 +38,15 @@
 		</Pair>
 	</StyleMap>
 	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
 		<LineStyle>
 			<color>33000000</color>
-			<width>3.6</width>
 		</LineStyle>
 		<PolyStyle>
 			<color>00ffffff</color>
