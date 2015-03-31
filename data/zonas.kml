@@ -12,7 +12,7 @@
 </Schema>
 <Folder><name>zonas</name>
   <Placemark>
-	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<Style><LineStyle><color>20000000</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
 	<ExtendedData><SchemaData schemaUrl="#zonas">
 		<SimpleData name="OBJECTID">2</SimpleData>
 		<SimpleData name="ID">2.00000000000</SimpleData>
