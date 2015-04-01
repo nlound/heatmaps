@@ -3,7 +3,7 @@ var puntosHeat = [];
 
 // cargo el csv con los puntos en un array
 $.ajax({
-    url: "data/puntos.csv",
+    url: "data/cuidacoches.csv",
     async: false,
     success: function(data) {
         arrayDePuntos = $.csv2Array(data);
@@ -11,7 +11,7 @@ $.ajax({
     dataType: "text",
     complete: function() {
         for (var i = 1; i < arrayDePuntos.length; i++) {
-            puntosHeat.push(new google.maps.LatLng(arrayDePuntos[i][0], arrayDePuntos[i][1]));
+            puntosHeat.push(new google.maps.LatLng(arrayDePuntos[i][1], arrayDePuntos[i][0]));
         };
     }
 });
@@ -31,7 +31,7 @@ function initialize() {
 
     map = new google.maps.Map(document.getElementById("mapaGoogle"), mapOptions);
 
-    kmzLayer = new google.maps.KmlLayer("http://nlound.github.io/heatmaps/data/zonas.kml", {
+    kmzLayer = new google.maps.KmlLayer("http://nlound.github.io/heatmaps/data/comunas.kml", {
         suppressInfoWindows: true
     });
     var pointArray = new google.maps.MVCArray(puntosHeat);

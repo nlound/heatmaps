@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Heatmaps con Google</title>
+    <title>Cuidacoches</title>
     <link rel="stylesheet" href="css/mapaGoogle.min.css" type="text/css" media="screen, projection" />
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=visualization"></script>
     <script src="lib/markerclusterer.js"></script>
@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    <div id="panel">
+    <div id="header" class="fondoElementos">Cuidacoches no registrados</div>
+
+    <div id="panel" class="fondoElementos">
       <button id="opacidad" onclick="changeOpacity()"></button>
       <span class="separador"></span>
       <button id="inicio"onclick="goHome()"></button>
