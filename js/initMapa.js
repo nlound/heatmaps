@@ -19,16 +19,8 @@ $.ajax({
 
 function initialize() {
 
-    var circle = {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillColor: 'red',
-        fillOpacity: .4,
-        scale: 4.5,
-        strokeColor: 'white',
-        strokeWeight: 1
-    };
-
-
+    var icono = new google.maps.MarkerImage("img/cuidacoches.png");
+    
     map = new google.maps.Map(document.getElementById("mapaGoogle"), mapOptions);
 
     kmzLayer = new google.maps.KmlLayer("http://nlound.github.io/heatmaps/data/comunas.kml", {
@@ -44,16 +36,18 @@ function initialize() {
 
     var clusteredMarkers = [];
     var markers = [];
-    for (i = 0; i < puntosHeat.length; i++) { //recontra cuelga el navegador
+    for (i = 0; i < puntosHeat.length; i++) { 
         var marker = new google.maps.Marker({
             position: puntosHeat[i],
             map: map,
-            icon: circle
+            icon: icono
         });
         clusteredMarkers.push(marker);
     }
 
-    markerCluster = new MarkerClusterer(map, clusteredMarkers);
+    var clusterSettings = {gridSize: 25, maxZoom: 17};
+
+    markerCluster = new MarkerClusterer(map, clusteredMarkers, clusterSettings);
 
     kmzLayer.setMap(map);
     heatmap.setMap(map);

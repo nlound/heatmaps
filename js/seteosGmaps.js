@@ -18,7 +18,7 @@ var mapOptions = {
     streetViewControl: false,
     mapTypeControl: false,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    maxZoom: 14,
+    maxZoom: 18,
     minZoom: 12,
     scaleControl: true,
     panControl: false,
