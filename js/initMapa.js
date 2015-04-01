@@ -23,7 +23,7 @@ function initialize() {
     
     map = new google.maps.Map(document.getElementById("mapaGoogle"), mapOptions);
 
-    kmzLayer = new google.maps.KmlLayer("http://nlound.github.io/heatmaps/data/comunas.kml", {
+    kmzLayer = new google.maps.KmlLayer("http://nlound.github.io/trapitos/data/comunas.kml", {
         suppressInfoWindows: true
     });
     var pointArray = new google.maps.MVCArray(puntosHeat);
